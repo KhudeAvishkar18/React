@@ -1,0 +1,95 @@
+Deadline to finish this course is '15th of September 2025'.
+
+React - 
+
+React is a JavaScript Library (Not a framework).
+React is used to make web frontend applications.
+React is mainly used to make Single Page Application (SPA).
+It is developed by Facebook (Meta).
+It's current version is React 19.
+After React, we can easily learn React Native which is used for App Development (both ios and android).
+
+To use react, we need Nodejs & npm to be installed in our pc
+When you install Node js, it automatically installs npm as well.
+To check node & npm versions
+>node -v
+>npm -v
+
+
+Vite - 
+
+Vite is used to install and setup React project, also to make project builds which can be deployed to production
+Vite is fast development server and build tool
+To install vite & create a new react project, go to your desired directory where you wants to create a new project and enter 
+>npm create vite (Create new react project)
+>cd projectName
+>npm install (Install node modules)
+>npm run dev (To run react website on specific port and get a url)
+
+
+Diff between Framework and Library is that
+Library's flow can be controlled by us but, framework has its own flow/rules, we need to follow that flow/rules only
+
+JSX - JavaScript XML
+TSX - TypeScript XML
+SWC - Speedy Web Compiler
+
+
+Files and their use in a React Project - 
+
+package.json -> All the dependencies & devDependencies of our React Project are mentioned in this file.
+package-lock.json -> All the nested dependencies of dependencies are stored in this file.
+README.md -> It is a readme file in which we can store our project related info, like what it does, which function does what etc.
+vite.config.js -> All the configuration of vite is present in this file.
+eslint.config.js -> All the configuration of eslint is  present in this file.
+.gitignore -> The files which we dont want to upload on git that fileNames/directoryNames are written in this file.
+
+src directory -> This contains below files and assets directory
+
+index.html -> This is entrypoint of browser which load main.jsx file.
+main.jsx -> This will put entire react application in div tag present in index.html
+App.jsx -> This file contains main App component and other sub components.
+App.css -> is a css file which is used to give styling to our components.
+index.css -> It is also a css file which is imported in main.jsx file.
+
+assets directory -> It contains media files which should not be visible to anyone and are private.
+public directory -> It also contains media files which can are available publically.
+node modules -> All the packages & libraries used by our react app are present in node modules.
+
+
+Components - 
+
+Any website is made of multiple components like header, footer, navbar, main component etc.
+When building UI using react, Everything is a component.
+A component can contain multiple sub components.
+Components name must start with capital letter.
+To use component first we need to import it by writing -> import ComponentName from "./ComponentFile"
+To use that imported component in our App component -> <ComponentName />
+A component is nothing like a javascript function whose name starts with capital letter and which returns some html code. But function & component are not same.
+
+
+JSX - JavaScript XML
+
+JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file.
+
+
+To upgrade or degrade the version of react in our react project -
+
+1) Open package.json file from react project
+2) Inside dependencies, change the react version to the version which you want to work with.
+3) Delete the current node modules folder.
+4) In terminal, run the command 'npm install' to install the node modules again of specified version. 
+5) Now test whether your project works in that specified version, for that run 'npm run dev' command
+
+In a dependency like "react": "^19.1.1", the caret (^) symbol indicates that the version can be updated to any minor or patch version within the same major version, meaning it would install version 19.x.x (such as 19.2.0, 19.2.1, or 19.3.0) but not a new major version like 20.0.0. This allows for automatic updates to bug fixes and performance improvements while preventing breaking changes from major version upgrades.
+
+
+
+
+
+
+
+
+
+
+
