@@ -12,7 +12,7 @@ function Events() {
             {/* To pass a function without parameters */}
             <button onClick={clickBtn}>Click me</button>
 
-            {/* To pass a function which takes parameters */}
+            {/* To pass a function which takes parameters use arrow function */}
             <button onClick={() => clickAnotherBtn("Avishkar")}>Click me</button>
         </>
     )

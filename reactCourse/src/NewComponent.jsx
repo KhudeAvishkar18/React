@@ -10,7 +10,7 @@ export default NewComponent;
 
 
 // We can have multiple components in one file.
-// In one file/module, there can only be one defualt export, others can be named export component
+// In one file/module, there can be only one defualt export, others can be named export components
 // The main/primary component is default exported, for others we will write export in front of component definition to make them named export.
 
 export function NewComponent1(){

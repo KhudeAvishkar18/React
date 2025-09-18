@@ -1,4 +1,4 @@
-Deadline to finish this course is '15th of September 2025'.
+Deadline to finish this course is '15th of October 2025' strict.
 
 React - 
 
@@ -53,7 +53,7 @@ App.css -> is a css file which is used to give styling to our components.
 index.css -> It is also a css file which is imported in main.jsx file.
 
 assets directory -> It contains media files which should not be visible to anyone and are private.
-public directory -> It also contains media files which can are available publically.
+public directory -> It also contains media files which can be available publically.
 node modules -> All the packages & libraries used by our react app are present in node modules.
 
 
@@ -82,6 +82,87 @@ To upgrade or degrade the version of react in our react project -
 5) Now test whether your project works in that specified version, for that run 'npm run dev' command
 
 In a dependency like "react": "^19.1.1", the caret (^) symbol indicates that the version can be updated to any minor or patch version within the same major version, meaning it would install version 19.x.x (such as 19.2.0, 19.2.1, or 19.3.0) but not a new major version like 20.0.0. This allows for automatic updates to bug fixes and performance improvements while preventing breaking changes from major version upgrades.
+
+
+States -
+
+State is a container to store some data just like variables.
+States are mutable and dynamic.
+To use states, we need to import them first (Variable dont need to import).
+If you make any changes to that state, it re-renders react component automatically and updated values will be displayed on webpage.
+State itself is a hook.
+
+
+Hooks -
+
+Hooks are the special features for functional component.
+Hooks allow you to use different react features for your components, such as State, lifecycle methods, side effects etc.
+Hooks names start with 'use', ex. useState, useId, useContext, useEffect, useRef, useReducer etc.
+
+
+Uses of useEffect hook - 
+
+1) To remove side effect from inside or outside component
+2) To fetch data
+3) Used as Life cycle methods
+4) Used for DOM Manipulation and much more
+
+
+Props -
+
+Props are used to pass data to the components.
+It is just like parameters we pass to the functions while calling functions, we can pass props while using any component.
+Props can be passed as separate variables, object, array etc.
+
+
+Controlled Components -
+
+A controlled component is a component, which contains a html form (optionally) whose input fields (compulsory) are controlled by React state.
+It stores input field value in state variable
+Uses onChange event handler on input field
+Value attribute of input field is attached with state variable.
+
+
+
+Ways of styling in React using CSS
+
+1) Inline style - We can write style attribute inside html elements, in which we can write css properties
+2) External style - We can create separate css file and import it in component file
+3) CSS Modules - This is similar to external css file, but ensures that styles are written for a specific component
+4) Styled Components - Styled components is a library, by using we can directly write css inside JavaScript component (Not inside html element).
+5) External framework - We can use frameworks like Tailwind css, React Bootstrap, Material UI etc to style the react components
+
+Q. Can we use internal css in React?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

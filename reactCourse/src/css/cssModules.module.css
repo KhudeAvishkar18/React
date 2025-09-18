@@ -1,0 +1,19 @@
+/* Name the css module file with .module.css extension */
+
+.heading{
+    color: green;
+}
+
+.card {
+    width: 220px;
+    background-color: rgb(247, 247, 186);
+    padding: 15px 0px;
+    text-align: center;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.img{
+    width: 200px;
+}

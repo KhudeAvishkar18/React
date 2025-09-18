@@ -1,0 +1,25 @@
+/* The problem with external css is that it automatically get applies on parent and child components of any component unnecessarily */
+
+h1{
+    /* color: blue; */
+}
+
+.card{
+    border: 2px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    width: 210px;
+    background-color: rgb(179, 235, 235);
+    padding: 15px 5px;
+    margin: auto;    /* Makes the component center */
+}
+
+.img{
+    width: 200px;
+    margin: 5px;
+}
+
+h4, p{
+    margin: 0px;
+    /* Removes unnecessary margin */
+}
