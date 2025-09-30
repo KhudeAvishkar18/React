@@ -29,6 +29,22 @@ import FunctionAsProps from "./FunctionAsProps";
 import ForwardRef from "./ForwardRef";
 import UseFormStatusHook from "./UseFormStatusHook";
 import UseTransitionHook from "./UseTransitionHook";
+import PureComponent from "./PureComponent";
+import DerivedState from "./DerivedState";
+import LiftingStateUp from "./LiftingStateUp";
+import { LiftingStateUp2 } from "./LiftingStateUp";
+import UpdateObjectState from "./UpdateObjectsInState";
+import UpdateArrayInState from "./UpdateArrayInState";
+import UseActionStateHook from "./UseActionStateHook";
+import UseIdHook from "./UseIdHook";
+import FragmentTag from "./FragmentTag";
+import CustomHook from "./CustomHook";
+import College from "./ContextAPI";
+import ReactRouter from "./ReactRouter";
+import NewNavbar from "./Navbar";
+import NotFound from "./NotFound";
+import NavbarRoutes from "./NavbarRoutes";
+import RoutePrefixes from "./RoutePrefixes";
 
 // default exported component is imported without using {} curly braces
 // named exported component is imported by using {} curly braces around them
@@ -49,6 +65,8 @@ function App() { // Components name should start with capital letters
   let clgNames = ['COEP', 'PICT', 'VIT', 'DYP'];
 
   const [nameState, setNameState] = useState('Avishkar');
+
+  const [user, setUser] = useState('');
 
   return (
     // Entire code which you return must be wrapped in a wrapper like div.
@@ -157,7 +175,37 @@ function App() { // Components name should start with capital letters
 
       {/* <UseFormStatusHook /> */}
 
-      <UseTransitionHook />
+      {/* <UseTransitionHook /> */}
+
+      {/* <PureComponent /> */}
+
+      {/* <DerivedState /> */}
+
+      {/* <LiftingStateUp setUser={setUser} />
+      <LiftingStateUp2 user={user} /> */}
+
+      {/* <UpdateObjectState /> */}
+
+      {/* <UpdateArrayInState /> */}
+
+      {/* <UseActionStateHook /> */}
+
+      {/* <UseIdHook /> */}
+
+      {/* <FragmentTag /> */}
+
+      {/* <CustomHook /> */}
+
+      {/* <College /> */}
+      {/* Context API */}
+
+      {/* <ReactRouter /> */}
+
+      <NavbarRoutes />
+
+      {/* <RoutePrefixes /> */}
+
+
 
     </>
   )

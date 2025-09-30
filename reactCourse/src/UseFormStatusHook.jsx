@@ -21,7 +21,7 @@ function UseFormStatusHook() {
         const { pending } = useFormStatus();
         // pending is a state (keyword) variable given by useFormStatus() hook
         // It will true, when form submission started till form submitted successfully, otherwise it will be false
-        console.log(pending);
+        console.log(pending);   // prints true or false
         return (
             <div>
                 <input style={inputStyle} type="text" placeholder="Enter username" />

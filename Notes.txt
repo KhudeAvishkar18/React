@@ -97,7 +97,7 @@ Hooks -
 
 Hooks are the special features for functional component.
 Hooks allow you to use different react features for your components, such as State, lifecycle methods, side effects etc.
-Hooks names start with 'use', ex. useState, useId, useContext, useEffect, useRef, useReducer etc.
+Hooks names start with 'use', ex. useState, useId, useContext, useEffect, useRef, useReducer, useActionState, useFormStatus etc.
 
 
 Uses of useEffect hook - 
@@ -137,8 +137,39 @@ Q. Can we use internal css in React?
 
 
 
+Lifting state up - 
+
+Sometimes, you want the state of two components to always change together. To do it, remove state from both of them, move it to their closest common parent, and then pass it down to them via props. This is known as lifting state up, and it’s one of the most common things you will do writing React code.
+
+Consider a scenario, you have two child components in an App component. And you have to transfer data (state variables) from one component into another.
+To do this you cant directly use data (states) from one component in another component, hence you need to declare state variables (data) in parent component
+i.e. in App component, so that we can use them in both child components. This scenario is called Lifting state up.
 
 
+
+
+Rules to be followed while creating custom hooks in react -
+
+1) Name should start with 'use' keyword, ex. useHook(), useFetch() etc
+2) Use hooks at top level of component, that means scope of hooks should be global within component. Ex. you should not use hook inside if block.
+3) Don't call hooks inside conditions or loops
+4) Don't call hooks after a conditional return statement
+5) Don't call hooks in event handlers
+6) Don't call hooks in class components
+7) Don't call hooks inside try, catch or finally block
+8) Don't call hooks from regular JavaScript function
+
+1. You can call hooks inside functional components
+2. You can call predefined or custom hooks inside custom hooks
+
+
+
+Install Tailwind CSS in React
+
+1) npm install -D tailwindcss postcss autoprefixer
+2) npx tailwindcss init -p
+
+There is some issue while installing the tailwind css, please resolve it.
 
 
 
