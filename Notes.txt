@@ -59,10 +59,11 @@ node modules -> All the packages & libraries used by our react app are present i
 
 Components - 
 
+React components are JavaScript functions that return markup.
 Any website is made of multiple components like header, footer, navbar, main component etc.
 When building UI using react, Everything is a component.
 A component can contain multiple sub components.
-Components name must start with capital letter.
+React component names must always start with a capital letter, while HTML tags must be lowercase.
 To use component first we need to import it by writing -> import ComponentName from "./ComponentFile"
 To use that imported component in our App component -> <ComponentName />
 A component is nothing like a javascript function whose name starts with capital letter and which returns some html code. But function & component are not same.
