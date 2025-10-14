@@ -96,6 +96,7 @@ State itself is a hook.
 
 Hooks -
 
+Functions starting with use are called Hooks.
 Hooks are the special features for functional component.
 Hooks allow you to use different react features for your components, such as State, lifecycle methods, side effects etc.
 Hooks names start with 'use', ex. useState, useId, useContext, useEffect, useRef, useReducer, useActionState, useFormStatus etc.
