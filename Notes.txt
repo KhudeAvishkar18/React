@@ -87,6 +87,7 @@ In a dependency like "react": "^19.1.1", the caret (^) symbol indicates that the
 
 States -
 
+State is like a component’s memory. It lets a component keep track of some information and change it in response to interactions.
 State is a container to store some data just like variables.
 States are mutable and dynamic.
 To use states, we need to import them first (Variable dont need to import).
@@ -113,6 +114,7 @@ Uses of useEffect hook -
 Props -
 
 Props are used to pass data to the components.
+Props are like arguments you pass to a function. They let a parent component pass data to a child component and customize its appearance. For example, a Form can pass a color prop to a Button.
 It is just like parameters we pass to the functions while calling functions, we can pass props while using any component.
 Props can be passed as separate variables, object, array etc.
 
@@ -173,6 +175,8 @@ Install Tailwind CSS in React
 
 There is some issue while installing the tailwind css, please resolve it.
 
+
+If you provide a `value` prop to a form field without an `onChange` handler then This will render a read-only input field. That means you cant enter the value inside that input field.
 
 
 
