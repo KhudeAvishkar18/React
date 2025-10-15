@@ -63,10 +63,11 @@ node modules -> All the packages & libraries used by our react app are present i
 
 Components - 
 
+React components are JavaScript functions that return markup.
 Any website is made of multiple components like header, footer, navbar, main component etc.
 When building UI using react, Everything is a component.
 A component can contain multiple sub components.
-Components name must start with capital letter.
+React component names must always start with a capital letter, while HTML tags must be lowercase.
 To use component first we need to import it by writing -> import ComponentName from "./ComponentFile"
 To use that imported component in our App component -> <ComponentName />
 A component is nothing like a javascript function whose name starts with capital letter and which returns some html code. But function & component are not same.
@@ -90,6 +91,7 @@ In a dependency like "react": "^19.1.1", the caret (^) symbol indicates that the
 
 States -
 
+State is like a component’s memory. It lets a component keep track of some information and change it in response to interactions.
 State is a container to store some data just like variables.
 States are mutable and dynamic.
 To use states, we need to import them first (Variable dont need to import).
@@ -99,6 +101,7 @@ State itself is a hook.
 
 Hooks -
 
+Functions starting with use are called Hooks.
 Hooks are the special features for functional component.
 Hooks allow you to use different react features for your components, such as State, lifecycle methods, side effects etc.
 Hooks names start with 'use', ex. useState, useId, useContext, useEffect, useRef, useReducer, useActionState, useFormStatus etc.
@@ -115,6 +118,7 @@ Uses of useEffect hook -
 Props -
 
 Props are used to pass data to the components.
+Props are like arguments you pass to a function. They let a parent component pass data to a child component and customize its appearance. For example, a Form can pass a color prop to a Button.
 It is just like parameters we pass to the functions while calling functions, we can pass props while using any component.
 Props can be passed as separate variables, object, array etc.
 
@@ -176,6 +180,8 @@ Install Tailwind CSS in React
 
 There is some issue while installing the tailwind css, please resolve it.
 
+
+If you provide a `value` prop to a form field without an `onChange` handler then This will render a read-only input field. That means you cant enter the value inside that input field.
 
 
 
