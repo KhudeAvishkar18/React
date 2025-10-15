@@ -1,4 +1,8 @@
-Deadline to finish this course is '15th of October 2025' strict.
+JS Course Started - 13th July 2025
+
+React Course Started - 18th August 2025
+Deadline to finish - 18th October 2025
+
 
 React - 
 
@@ -164,6 +168,7 @@ Rules to be followed while creating custom hooks in react -
 
 
 
+
 Install Tailwind CSS in React
 
 1) npm install -D tailwindcss postcss autoprefixer
@@ -174,34 +179,39 @@ There is some issue while installing the tailwind css, please resolve it.
 
 
 
+JSON-Server for API Creation
+
+We can use JSON-Server to create apis which can support get, put, post, delete methods.
+It is the simplest way as compared to other ways of creation of APIs.
+We can also create APIs using another programming languages such as Java, PHP, Python etc, but it will take too much time, hence we use JSON-server.
+
+To install JSON-server -
+Go to official GitHub of JSON-server https://github.com/typicode/json-server/tree/v0
+there you will find documentation about how to install and run JSON-server
+
+To install json-server, run below command in one directory
+>npm install json-server
+
+then create db.json file inside this folder and keep data given in documentation in that file, also you can add your data to create your API
+
+To access that apis first you need to run json-server, for that run below command
+>npx json-server db.json
+
+Now there itself inside terminal you will get endpoints of apis present in your json-server
+you can copy that endpoints and use in your project or test them by using postman or thunderclient
+
+the url of that api will look like - http://localhost:3000/myNewAPI
+
+Note : You can access these apis until your json-server is running
 
 
 
 
+Calling API from react
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Get = fetch(url);
+Put = fetch(url + '/' + id, {method : "PUT", body : JSON.stringify(updatedDataObject)});
+Post = fetch(url, {method : "POST", body : JSON.stringify(dataObject)});
+Delete = fetch(url + '/' + id, {method : "DELETE"});
 
 

@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "myNewAPI": [
+    {
+      "id": "1194",
+      "name": "Avishkar",
+      "sirName": "Khude",
+      "city": "Hyderabad"
+    },
+    {
+      "id": "2343",
+      "name": "Aniket",
+      "sirName": "Gund",
+      "city": "Shirwal"
+    }
+  ]
+}

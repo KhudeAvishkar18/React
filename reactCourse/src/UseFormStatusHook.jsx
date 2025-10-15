@@ -1,6 +1,6 @@
 import { useFormStatus } from 'react-dom';
 // useFormStatus hook gives us a state variable called 'pending' by using which we can determine whether the form submitted or still pending
-// And if pending = true, that means form is submitting, at that time we can make some changes in our component 
+// And if pending = true, that means form is submitting, within that time we can make some changes in our component 
 
 // To use this hook, we compulsorily need to use html form in our component.
 
