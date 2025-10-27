@@ -72,6 +72,32 @@ To use component first we need to import it by writing -> import ComponentName f
 To use that imported component in our App component -> <ComponentName />
 A component is nothing like a javascript function whose name starts with capital letter and which returns some html code. But function & component are not same.
 
+-- Class Based Component
+import React, { Component } from 'react';
+class Counter extends Component {
+  constructor(props) {
+    super(props);
+    // Define initial state
+    this.state = {
+      count: 0
+    };
+  }
+  // Method to update state
+  increment = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+  render() {
+    return (
+      <div>
+        <h2>Count: {this.state.count}</h2>
+        <button onClick={this.increment}>Increment</button>
+      </div>
+    );
+  }
+}
+export default Counter;
+
+
 
 JSX - JavaScript XML
 
