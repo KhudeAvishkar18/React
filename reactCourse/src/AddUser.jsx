@@ -10,7 +10,7 @@ function AddUser() {
         const objData = {
             "id": id,
             "name": name,
-            "sirname": sirName,
+            "sirName": sirName,
             "city": city
         }
 

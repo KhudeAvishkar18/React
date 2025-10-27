@@ -14,6 +14,7 @@ function JsonServerAPI() {
     // useNavigate() hook to route to update page
     const navigate = useNavigate();
 
+    // Get method
     function fetchAPI() {
         startTransition(async () => {
             const url = 'http://localhost:3000/myNewAPI';
@@ -23,19 +24,15 @@ function JsonServerAPI() {
         })
     }
 
-    // We are not using useEffect(), because we are fetching api data on button click
-    // useEffect(() => {
-    //     fetchAPI();
-    // }, [])
-
     // Styling users list
     const ulStyle = {
         display: "flex",
-        justifyContent: "space-around",
+        justifyContent: "space-between",
         margin: "10px",
         listStyle: 'none'
     }
 
+    // Delete method
     const deleteUser = async (id) => {
         let url = 'http://localhost:3000/myNewAPI';
 
@@ -55,6 +52,7 @@ function JsonServerAPI() {
 
     }
 
+    // Route to update page
     function setUpdatedData(id) {
         navigate('/updateUser/' + id);
     }
@@ -83,7 +81,7 @@ function JsonServerAPI() {
                     <ul key={index} style={ulStyle} >
                         <li>{user.id}</li>
                         <li>{user.name}</li>
-                        <li>{user.sirname}</li>
+                        <li>{user.sirName}</li>
                         <li>{user.city}</li>
                         <li><button onClick={() => deleteUser(user.id)}>Delete</button>
                             <button onClick={() => setUpdatedData(user.id)}>Edit</button>

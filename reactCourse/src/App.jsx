@@ -48,6 +48,8 @@ import RoutePrefixes from "./RoutePrefixes";
 import API from "./API";
 import JsonServerAPI from "./JsonServerAPI";
 import UsersAPI from "./UsersAPI";
+import ValidationSimple from "./ValidationSimple";
+import ValidationAdvanced from "./ValidationAdvanced";
 
 // default exported component is imported without using {} curly braces
 // named exported component is imported by using {} curly braces around them
@@ -212,7 +214,11 @@ function App() { // Components name should start with capital letters
 
       {/* <JsonServerAPI /> */}
 
-      <UsersAPI />
+      {/* <UsersAPI /> */}
+
+      {/* <ValidationSimple /> */}
+
+      <ValidationAdvanced />
 
     </>
   )

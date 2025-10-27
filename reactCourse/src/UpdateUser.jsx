@@ -17,39 +17,37 @@ function UpdateUser() {
     let url = 'http://localhost:3000/myNewAPI';
     url = url + '/' + idParam;
 
-    const getData = async() =>{
+    const getData = async () => {
         let response = await fetch(url);
         response = await response.json();
 
         // Setting states with api data
         setId(response.id);
         setName(response.name);
-        setSirName(response.sirname);
+        setSirName(response.sirName);
         setCity(response.city);
     }
 
     useEffect(() => {
         getData();
     }, [])
-    
-    const updateUserDetails = async() => {
-        let objData = {id, name, sirName, city};
-        console.log(objData);
+
+    const updateUserDetails = async () => {
+        let objData = { id, name, sirName, city };
 
         let response = await fetch(url, {
-            method:'PUT',
-            body:JSON.stringify(objData)
+            method: 'PUT',
+            body: JSON.stringify(objData)
         });
 
         response = await response.json();
-        console.log(response);
-        if(response){
+        if (response) {
             alert('Data updated successfully');
             navigate('/');
         }
 
     }
-    
+
     return (
         <div style={{ textAlign: 'center' }}>
             <h2>Update User Details</h2>
@@ -70,7 +68,6 @@ function UpdateUser() {
             <label htmlFor="city">City : </label>
             <input id="city" value={city} placeholder="Enter City" onChange={(event) => setCity(event.target.value)} type="text" />
             <br /><br />
-
 
             <button style={{ display: 'block', margin: '20px auto', padding: '10px', backgroundColor: 'yellow', cursor: 'pointer' }} onClick={updateUserDetails}>Update User</button>
         </div>

@@ -4,6 +4,10 @@ import AddUser from "./AddUser";
 import UpdateUser from "./UpdateUser";
 import { useState } from "react";
 
+// Make sure to start the json server before running this project to get api data properly
+// To run json-server
+// inside C:\React\API directory enter command >npx json-server db.json 
+
 function UsersAPI() {
 
     return (
@@ -19,6 +23,7 @@ function UsersAPI() {
                 </Routes>
             </BrowserRouter>
 
+            {/* This outlet element will display particular child element based on selected route */}
             <Outlet />
         </>
     )
