@@ -51,7 +51,7 @@ eslint.config.js -> All the configuration of eslint is  present in this file.
 src directory -> This contains below files and assets directory
 
 index.html -> This is entrypoint of browser which load main.jsx file.
-main.jsx -> This will put entire react application in div tag present in index.html
+main.jsx -> This will put entire react application (App Component) in div tag present in index.html
 App.jsx -> This file contains main App component and other sub components.
 App.css -> is a css file which is used to give styling to our components.
 index.css -> It is also a css file which is imported in main.jsx file.
@@ -71,6 +71,32 @@ React component names must always start with a capital letter, while HTML tags m
 To use component first we need to import it by writing -> import ComponentName from "./ComponentFile"
 To use that imported component in our App component -> <ComponentName />
 A component is nothing like a javascript function whose name starts with capital letter and which returns some html code. But function & component are not same.
+
+-- Class Based Component
+import React, { Component } from 'react';
+class Counter extends Component {
+  constructor(props) {
+    super(props);
+    // Define initial state
+    this.state = {
+      count: 0
+    };
+  }
+  // Method to update state
+  increment = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+  render() {
+    return (
+      <div>
+        <h2>Count: {this.state.count}</h2>
+        <button onClick={this.increment}>Increment</button>
+      </div>
+    );
+  }
+}
+export default Counter;
+
 
 
 JSX - JavaScript XML
