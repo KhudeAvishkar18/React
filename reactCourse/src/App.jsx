@@ -50,6 +50,9 @@ import JsonServerAPI from "./JsonServerAPI";
 import UsersAPI from "./UsersAPI";
 import ValidationSimple from "./ValidationSimple";
 import ValidationAdvanced from "./ValidationAdvanced";
+import UseReducerHook from "./UseReducerHook";
+import LazyLoading from "./LazyLoader";
+import UseAPI from './UseAPI';
 
 // default exported component is imported without using {} curly braces
 // named exported component is imported by using {} curly braces around them
@@ -218,7 +221,13 @@ function App() { // Components name should start with capital letters
 
       {/* <ValidationSimple /> */}
 
-      <ValidationAdvanced />
+      {/* <ValidationAdvanced /> */}
+
+      {/* <UseReducerHook /> */}
+
+      {/* <LazyLoading /> */}
+
+      <UseAPI />
 
     </>
   )
