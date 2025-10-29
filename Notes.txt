@@ -141,6 +141,10 @@ Uses of useEffect hook -
 4) Used for DOM Manipulation and much more
 
 
+The useFormStatus Hook must be called from a component that is rendered inside a html <form>.
+useFormStatus will only return status information for a parent <form>. It will not return status information for any <form> rendered in that same component or children components.
+
+
 Props -
 
 Props are used to pass data to the components.
@@ -237,8 +241,6 @@ the url of that api will look like - http://localhost:3000/myNewAPI
 Note : You can access these apis until your json-server is running
 
 
-
-
 Calling API from react
 
 Get = fetch(url);
@@ -248,11 +250,17 @@ Delete = fetch(url + '/' + id, {method : "DELETE"});
 
 
 
-
 'use' API in React
 
 'use' can handle promise and return data from promise
 We should use 'use' API with suspense
 'use' API can also be used to handle context api
 'use' API reduces rerendering of component as compared to useEffect()
+
+
+
+useReducer() hook - 
+
+const [state, dispatch] = useReducer(reducer, initialArg);
+Call useReducer at the top level of your component to manage its state with a reducer.
 
