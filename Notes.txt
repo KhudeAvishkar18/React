@@ -252,6 +252,8 @@ Delete = fetch(url + '/' + id, {method : "DELETE"});
 
 'use' API in React
 
+use is a React API that lets you read the value of a resource like a Promise or context.
+const value = use(resource);
 'use' can handle promise and return data from promise
 We should use 'use' API with suspense
 'use' API can also be used to handle context api
