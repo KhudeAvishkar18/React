@@ -277,3 +277,22 @@ ErrorBoundary -
   </Suspense>
 </ErrorBoundary>
 
+
+
+// React 19 is officially released
+// In React 19 some new things came and also some old things modified
+
+// Whats New in React 19
+
+// Actions - useTransition(), useOptimistic(), useActionState(), useFormStatus()
+// Actions are the functions that automatically manage form data by using above hooks
+// New API - use, prerender, prerenderToNodeStream
+// Server Action (Server components are introduced) - Components which are rendered on server side are called server components
+
+// Improvements in old concepts - 
+
+// We can send ref as prop (Previously we have to use forwardRef() to pass 'ref' to child component)
+// Better error reporting/responses
+// We can render <Context> as a provider instead of <Context.Provider>
+// We can add stylesheets by using link tag inside a component
+// Support for custom elements
