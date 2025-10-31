@@ -258,6 +258,7 @@ const value = use(resource);
 We should use 'use' API with suspense
 'use' API can also be used to handle context api
 'use' API reduces rerendering of component as compared to useEffect()
+unlike useContext(), we can read value of context variable inside conditional like if and loops like for by using use() API.
 
 
 
