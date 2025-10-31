@@ -267,3 +267,13 @@ useReducer() hook -
 const [state, dispatch] = useReducer(reducer, initialArg);
 Call useReducer at the top level of your component to manage its state with a reducer.
 
+
+
+ErrorBoundary - 
+
+<ErrorBoundary fallback={<p>⚠️Something went wrong</p>}>
+  <Suspense fallback={<p>⌛Downloading message...</p>}>
+    <Message messagePromise={messagePromise} />
+  </Suspense>
+</ErrorBoundary>
+
