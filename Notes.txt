@@ -312,3 +312,7 @@ Centralized state management system i.e. Store: React state is stored locally wi
 Performance Optimizations: By default, whenever a component is updated, React re-renders all the components inside that part of the component tree. In such a case when the data for a given component hasn’t changed, these re-renders are wasted (cause the UI output displayed on the screen would remain the same). Redux store helps in improving the performance by skipping such unnecessary re-renders and ensuring that a given component re-renders only when its data has actually changed.
 
 Storing long-term data: Since data stored in redux persists until page refresh, it is widely used to store long-term data that is required while the user navigates the application, such as, data loaded from an API, data submitted through a form, etc. On the other hand, React is suitable for storing short-term data that is likely to change quickly (form inputs, toggles, etc.)
+
+Actions describe what happened: (e.g., "user wants to increment counter by 5").
+Reducers describe how to update the state based on that action: (e.g., "if the action type is 'increment', add the payload value to the current counter value").
+Action is what to do, Reducer is how to do it.
