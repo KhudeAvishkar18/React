@@ -1,10 +1,13 @@
 // 'use' is an API not a Hook.
+// 'use' is a React API that lets you read the value of a resource like a Promise or context.
+
+// Here we will read value of data returned by an api in the form of promise by using 'use' api.
 
 import { Suspense, use } from "react";
 
 // Calling an API using fetch() API method
-const apiResponse = () => {
-    return fetch('https://dummyjson.com/users').then((res) => res.json());
+const apiResponse = async () => {
+    return await fetch('https://dummyjson.com/users').then((res) => res.json());
 }
 // Calling api outside of component to avoid rerendering of component and recalling of api
 
@@ -29,11 +32,14 @@ export default UseAPI;
 // Taking API response as a prop and fetching data from that promise using 'use' API
 function User({userResource}){
     // userResource is a promise returned by api
+
     const userData = use(userResource);
-    // userData is the actual data present inside promise
+    // userData is the actual data object present inside promise, which we accessed by using 'use' api
     // here 'use' resolved the promise and returned data present in that promise
+
     const users = userData.users;
-    // Inside userData, users is the array of 30 users
+    // Inside users is the array of 30 users present inside userData object
+
     return(
         <>
         {

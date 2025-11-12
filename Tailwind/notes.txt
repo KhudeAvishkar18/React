@@ -1,0 +1,79 @@
+Tailwind CSS is a utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+
+Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.
+
+For Installation of Tailwind in React - 
+
+>npm create vite@latest my-project
+>cd my-project
+>npm install tailwindcss @tailwindcss/vite
+>npm install
+
+
+Paste below content in vite.config.js file
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+})
+
+
+Then import Tailwind css inside index.css file
+@import "tailwindcss";
+
+Then to run react app enter below command in console
+>npm run dev
+
+Note : If any error comes in installation, follow official documentation or ask chatgpt
+
+
+
+Actual CSS classes -
+
+
+To make any element center, use 'grid' class in that element
+To make it center vertically & horizontally - 'place-content-center'
+
+To increase height of any element equals to height of viewport - 'h-screen'
+
+
+
+By default Tailwind uses mobile first approach for responsiveness, we have to convert it for large display device
+
+
+
+
+
+
+
+
+
+
+
+CSS Basics to learn - 
+
+Flexbox, Grid
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -53,6 +53,8 @@ import ValidationAdvanced from "./ValidationAdvanced";
 import UseReducerHook from "./UseReducerHook";
 import LazyLoading from "./LazyLoader";
 import UseAPI from './UseAPI';
+import ColourMixer from "./ColourMixer";
+import ReduxToolkit from "./Redux";
 
 // default exported component is imported without using {} curly braces
 // named exported component is imported by using {} curly braces around them
@@ -227,7 +229,11 @@ function App() { // Components name should start with capital letters
 
       {/* <LazyLoading /> */}
 
-      <UseAPI />
+      {/* <UseAPI /> */}
+
+      {/* <ColourMixer /> */}
+
+      <ReduxToolkit />
 
     </>
   )
