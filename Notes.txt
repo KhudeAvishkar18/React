@@ -252,10 +252,13 @@ Delete = fetch(url + '/' + id, {method : "DELETE"});
 
 'use' API in React
 
+use is a React API that lets you read the value of a resource like a Promise or context.
+const value = use(resource);
 'use' can handle promise and return data from promise
 We should use 'use' API with suspense
 'use' API can also be used to handle context api
 'use' API reduces rerendering of component as compared to useEffect()
+unlike useContext(), we can read value of context variable inside conditional like if and loops like for by using use() API.
 
 
 
@@ -264,3 +267,52 @@ useReducer() hook -
 const [state, dispatch] = useReducer(reducer, initialArg);
 Call useReducer at the top level of your component to manage its state with a reducer.
 
+
+
+ErrorBoundary - 
+
+<ErrorBoundary fallback={<p>⚠️Something went wrong</p>}>
+  <Suspense fallback={<p>⌛Downloading message...</p>}>
+    <Message messagePromise={messagePromise} />
+  </Suspense>
+</ErrorBoundary>
+
+
+
+// React 19 is officially released
+// In React 19 some new things came and also some old things modified
+
+// Whats New in React 19
+
+// Actions - useTransition(), useOptimistic(), useActionState(), useFormStatus()
+// Actions are the functions that automatically manage form data by using above hooks
+// New API - use, prerender, prerenderToNodeStream
+// Server Action (Server components are introduced) - Components which are rendered on server side are called server components
+
+// Improvements in old concepts - 
+
+// We can send ref as prop (Previously we have to use forwardRef() to pass 'ref' to child component)
+// Better error reporting/responses
+// We can render <Context> as a provider instead of <Context.Provider>
+// We can add stylesheets by using link tag inside a component
+// Support for custom elements
+
+
+
+
+What is React Redux -
+
+React Redux is the official react binding for redux. It provides a predictable state container by connecting React components to a centralized store, simplifying data flow and enabling efficient management of application state across components.
+
+Redux is a state managing library used in JavaScript apps. It simply manages the state of your application or in other words, it is used to manage the data of the application. It is used with a library like React.
+
+Advantages of React Redux -
+Centralized state management system i.e. Store: React state is stored locally within a component. To share this state with other components in the application, props are passed to child components, or callbacks are used for parent components. Redux state, on the other hand, is stored globally in the store. All the components of the entire application can easily access the data directly. This centralizes all data and makes it very easy for a component to get the state it requires. So while developing large, complex applications with many components, the Redux store is highly preferred.
+
+Performance Optimizations: By default, whenever a component is updated, React re-renders all the components inside that part of the component tree. In such a case when the data for a given component hasn’t changed, these re-renders are wasted (cause the UI output displayed on the screen would remain the same). Redux store helps in improving the performance by skipping such unnecessary re-renders and ensuring that a given component re-renders only when its data has actually changed.
+
+Storing long-term data: Since data stored in redux persists until page refresh, it is widely used to store long-term data that is required while the user navigates the application, such as, data loaded from an API, data submitted through a form, etc. On the other hand, React is suitable for storing short-term data that is likely to change quickly (form inputs, toggles, etc.)
+
+Actions describe what happened: (e.g., "user wants to increment counter by 5").
+Reducers describe how to update the state based on that action: (e.g., "if the action type is 'increment', add the payload value to the current counter value").
+Action is what to do, Reducer is how to do it.
