@@ -1,16 +1,18 @@
+import FeaturesList from './FeaturesList';
+import Footer from './Footer';
+import Hero from './Hero';
 import Navbar from './Navbar';
-import NewCard from './NewCard';
-import Sticker from './Sticker';
+import Products from './Products';
 
 function PW_Project() {
     return (
         <>
-            <div className="bg-slate-950 h-screen">
+            <div className="bg-slate-950">
                 <Navbar />
-
-                <Sticker />
-
-                <NewCard />
+                <Hero />
+                <FeaturesList />
+                <Products />
+                <Footer />
             </div>
         </>
     )
