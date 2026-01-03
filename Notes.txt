@@ -1,9 +1,3 @@
-JS Course Started - 13th July 2025
-
-React Course Started - 18th August 2025
-Deadline to finish - 31st October 2025
-
-
 React - 
 
 React is a JavaScript Library (Not a framework).
